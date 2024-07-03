@@ -1,61 +1,69 @@
-import React from 'react'
-import logo from "../assets/logo.PNG"
-import '../style/footer.css'
-import {EnvelopeOpenFill} from 'react-bootstrap-icons';
-import {ChevronRight} from 'react-bootstrap-icons';
-import { GeoAltFill } from 'react-bootstrap-icons';
+import React from 'react';
+import logo from "../assets/logo.PNG";
+import { EnvelopeOpenFill, ChevronRight, GeoAltFill } from 'react-bootstrap-icons';
+import { Container, Grid, Typography, Link, TextField, Button } from '@mui/material'; // Importing necessary Material-UI components
+import '../style/footer.css';
 
 const Footer = () => {
-
   return (
-    <div className='p-3 text-primary' style={{backgroundColor:'#194E86'}}>
-      <div className='container footer'>
-        <div>
-          <img src={logo} className='logo' alt="footer_logo"/>
-          <p className='footerPara'>Smartblink is a dedicated to transforming irdinary homes into smart-homes,
-             making life more convenient, secure, and energy-efficient.
-          </p>
-          <div className='social_icons'>
-            <ul className='list-unstyled'>
-              <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook"></i></a></li>
-              <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div className='container'>
-            <div className='navigation'>
-              <p className='footerHeading'>Navigation</p>
-              <ul className='listType'>
-                <li><ChevronRight/><a href='/'> Home</a></li>
-                <li><ChevronRight/><a href='/about'>About Us</a></li>
-                <li><ChevronRight/><a href='/product'>Products</a></li>
-                <li><ChevronRight/><a href='/solution'>Solutions</a></li>
-                <li><ChevronRight/><a href='/contact'>Contact Us</a></li>
-                <li><ChevronRight/><a href='/FAQ'>FAQ</a></li>
+    <footer className="text-primary pt-3" style={{backgroundColor: '#14274C', paddingTop: '10px', paddingBottom: '10px' }}>
+      <Container>
+        <Grid container spacing={4}>
+          <Grid item md={4} xs={12}>
+            <img src={logo} className="logo mb-2" alt="footer_logo" style={{ maxWidth: '60%', height: 'auto', color:'white' }} />
+            <Typography variant="body1" className="footerPara">
+              Smartblink is dedicated to transforming ordinary homes into smart homes, making life more convenient, secure, and energy-efficient.
+            </Typography>
+            <div className="social-icons">
+              <ul className="list-unstyled d-flex">
+                <li className="mr-3"><Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook"></i></Link></li>
+                <li className="mr-3"><Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter"></i></Link></li>
+                <li className="mr-3"><Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></Link></li>
+                <li className="mr-3"><Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link></li>
               </ul>
             </div>
-            <div className='contact'>
-              <p className='footerHeading'>Contact Us</p>
-                <p><GeoAltFill className='icon' href='https://www.google.ca/maps/place/Toronto,+ON/@43.718371,-79.5428702,11z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!8m2!3d43.653226!4d-79.3831843!16zL20vMGg3aDY?entry=ttu'/>Toronto,Ontario</p>
-                <p><EnvelopeOpenFill className='icon' href='mailto:info@smartblink.ca?subject=Having%20a%20query%20GFG'/> info@smartblink.ca</p>
-                <form>
-                  <div className="form-group">
-                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Email Address"/>
-                  </div>
-                  <button className="button">SUBSCRIBE</button>
-                </form>
-            </div>
-        </div>
+          </Grid>
+          <Grid item md={4} xs={12}>
+            <Typography variant="h6" className="footerHeading" >
+              Navigation
+            </Typography>
+            <ul className="list-unstyled listType">
+              <li><ChevronRight /><Link href="/"> Home</Link></li>
+              <li><ChevronRight /><Link href="/about">About Us</Link></li>
+              <li><ChevronRight /><Link href="/product">Products</Link></li>
+              <li><ChevronRight /><Link href="/solution">Solutions</Link></li>
+              <li><ChevronRight /><Link href="/contact">Contact Us</Link></li>
+              <li><ChevronRight /><Link href="/FAQ">FAQ</Link></li>
+            </ul>
+          </Grid>
+          <Grid item md={4} xs={12}>
+            <Typography variant="h6" className="footerHeading">
+              Contact Us
+            </Typography>
+            <Typography variant="body1">
+              <GeoAltFill className="icon" /><Link href="https://www.google.ca/maps/place/Toronto,+ON">@Toronto, Ontario</Link>
+            </Typography>
+            <Typography variant="body1">
+              <EnvelopeOpenFill className="icon" /><Link href="mailto:info@smartblink.ca?subject=Having%20a%20query%20GFG">info@smartblink.ca</Link>
+            </Typography>
+            <form>
+              <TextField type="email" label="Email Address" variant="outlined" className="form-control" />
+              <Button variant="contained"  type="submit" className="button" >
+                SUBSCRIBE
+              </Button>
+            </form>
+          </Grid>
+        </Grid>
+      </Container>
+      <hr className="border-top border-white" />
+      <Container>
+      <Typography variant="body2" className="d-flex justify-content-between">
+        <span>© {new Date().getFullYear()} Smartblink. All Rights Reserved.</span>
+        <span className='text-right'><a href='/'>Privacy Policy</a>  <a href='/'>Terms of Use</a> </span>
+      </Typography>
+      </Container>
+    </footer>
+  );
+};
 
-        <hr/>
-
-        <p></p>
-      </div>
-    </div>
-  )
-}
-
-export default Footer
-
+export default Footer;

@@ -1,4 +1,7 @@
-
+.homeImage{
+  height: 400px;
+  max-width: 500px;
+}
 
   .container{
     margin: 10px;
@@ -32,6 +35,7 @@
     .container {
       flex-direction: column;
     }
+    
   }
 
   

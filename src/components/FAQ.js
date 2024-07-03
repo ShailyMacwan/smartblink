@@ -3,42 +3,47 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-export default function FAQ() {
+export default function AccordionExpandIcon() {
+  const accordionItems = [
+    { question: 'Question', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.' },
+    { question: 'Question', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.' },
+    { question: 'Question', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.' },
+    { question: 'Question', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.' },
+    { question: 'Question', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.' },
+    { question: 'Question', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.' }
+  ];
+
+  const accordionStyle = {
+    questionColor: '#194E86',
+    answerColor: 'black',
+  };
+
   return (
-    <div>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-        >
-          <Typography>Accordion 2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+    <div style={{
+      margin: '6%',
+      padding: '5%',
+      boxShadow: '1px 1px 10px 0px grey',
+      color: accordionStyle.answerColor 
+    }}>
+      <h3 className='text-primary text-center'>FREQUENTLY ASKED QUESTIONS</h3>
+      
+      {accordionItems.map((item, index) => (
+        <Accordion key={index} style={{ color: accordionStyle.questionColor }}>
+          <AccordionSummary
+            expandIcon={<ArrowDropDownIcon />}
+            aria-controls={`panel${index + 1}-content`}
+            id={`panel${index + 1}-header`}
+          >
+            <Typography style={{ color: accordionStyle.questionColor }}>{item.question}</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography style={{ color: accordionStyle.answerColor }}>{item.answer}</Typography>
+          </AccordionDetails>
+        </Accordion>
+      ))}
+      
     </div>
   );
 }

@@ -1,53 +1,178 @@
-p{
+/* Base Styles */
+p {
     color: white;
-}
-
-.logo{
-    height: 50px;
-    width: 250px;
-    margin-bottom: 2rem;
-}
-
-.footerHeading{
+    font-size: 0.9rem; 
+  }
+  
+  .logo {
+    height: auto;
+    margin-bottom: 1rem; 
+  }
+  
+  .footerHeading {
     color: white;
-    font-size: 1.4rem;
-}
-.footerPara{
+    font-size: 1.2rem; 
+  }
+  
+  .footerPara {
     color: white;
-}
-
-.listType{
+  }
+  
+  .listType {
     font-family: "Bootstrap Icons";
     color: yellow;
-}
-
-li a{
+  }
+  
+  li a {
     color: white;
-}
-
-.icon{
+  }
+  
+  .icon {
     color: yellow;
     margin-right: 1rem;
-}
-.form-control{
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: blue;
-    border-bottom: 1rem yellow;
-}
-
-.button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+  }
+  
+  .form-control {
+    padding: 12px 28px; 
+    font-size: 0.9rem; 
+    margin-top: 10px;
+    width: 60%;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  
+  .button {
+    padding: 12px 28px; 
+    font-size: 14px; 
     cursor: pointer;
-    background-color: #008CBA;
+    border: none;
+    background-color: #8C472E;
+    transition-duration: 0.4s;
+    margin: 10px;
+  }
+  .button:hover{
+    background-color: #cb866d;
+  }
+  
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:link{
+    color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #FFB600;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+ 
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .logo {
+      max-width: 70%;
+    }
+  
+    .footerHeading {
+      font-size: 1rem;
+    }
+  
+    .footerPara {
+      font-size: 0.8rem;
+    }
+  
+    .listType li {
+      font-size: 0.8rem;
+    }
+  
+    .icon {
+      font-size: 0.8rem;
+    }
+  
+    .form-control {
+      padding: 10px 24px;
+      font-size: 0.8rem;
+      margin: 8px;
+    }
+  
+    .button {
+      padding: 10px 24px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      max-width: 60%;
+    }
+  
+    .footerHeading {
+      font-size: 0.9rem;
+    }
+  
+    .footerPara {
+      font-size: 0.7rem;
+    }
+  
+    .listType li {
+      font-size: 0.7rem;
+    }
+  
+    .icon {
+      font-size: 0.7rem;
+    }
+  
+    .form-control {
+      padding: 8px 20px;
+      font-size: 0.7rem;
+    }
+  
+    .button {
+      padding: 8px 20px;
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .logo {
+      max-width: 50%;
+    }
+  
+    .footerHeading {
+      font-size: 0.8rem;
+    }
+  
+    .footerPara {
+      font-size: 0.6rem;
+    }
+  
+    .listType li {
+      font-size: 0.6rem;
+    }
+  
+    .icon {
+      font-size: 0.6rem;
+    }
+  
+    .form-control {
+      padding: 6px 16px;
+      font-size: 0.6rem;
+      margin: 6px;
+    }
+  
+    .button {
+      padding: 6px 16px;
+      font-size: 8px;
+    }
   }
   
