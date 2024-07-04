@@ -1,178 +1,196 @@
 /* Base Styles */
 p {
-    color: white;
-    font-size: 0.9rem; 
-  }
-  
+  color: white;
+  font-size: 0.9rem; 
+}
+
+.logo {
+  height: auto;
+  margin-bottom: 1rem; 
+}
+
+.footerHeading {
+  color: white;
+  font-size: 1.2rem; 
+}
+
+.footerPara {
+  color: white;
+}
+
+.listType {
+  font-family: "Bootstrap Icons";
+  color: yellow;
+}
+
+li a {
+  color: white;
+}
+
+.icon {
+  color: yellow;
+  margin-right: 1rem;
+}
+
+.contactItem {
+  margin-bottom: 10px !important;
+}
+
+.form-control {
+  padding: 12px 28px; 
+  font-size: 0.9rem; 
+  margin: 10px;
+  width: 80%;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.button {
+  padding: 12px 28px; 
+  font-size: 14px; 
+  cursor: pointer;
+  border: none;
+  background-color: #8C472E;
+  transition-duration: 0.4s;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #cb866d;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FFB600;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* Ensure navigation links are white */
+.footer-link {
+  color: white !important;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #FFB600 !important;
+}
+
+/* Move navigation section to the right */
+.navigation-section {
+  padding-left: 20px; /* Adjust this value as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
   .logo {
-    height: auto;
-    margin-bottom: 1rem; 
+    max-width: 70%;
   }
-  
+
   .footerHeading {
-    color: white;
-    font-size: 1.2rem; 
+    font-size: 1rem;
   }
-  
+
   .footerPara {
-    color: white;
+    font-size: 0.8rem;
   }
-  
-  .listType {
-    font-family: "Bootstrap Icons";
-    color: yellow;
+
+  .listType li {
+    font-size: 0.8rem;
   }
-  
-  li a {
-    color: white;
-  }
-  
+
   .icon {
-    color: yellow;
-    margin-right: 1rem;
+    font-size: 0.8rem;
   }
-  
+
   .form-control {
-    padding: 12px 28px; 
-    font-size: 0.9rem; 
-    margin-top: 10px;
-    width: 60%;
-    height: 3rem;
-    line-height: 3rem;
+    padding: 10px 24px;
+    font-size: 0.8rem;
+    margin: 8px;
   }
-  
+
   .button {
-    padding: 12px 28px; 
-    font-size: 14px; 
-    cursor: pointer;
-    border: none;
-    background-color: #8C472E;
-    transition-duration: 0.4s;
-    margin: 10px;
+    padding: 10px 24px;
+    font-size: 12px;
   }
-  .button:hover{
-    background-color: #cb866d;
-  }
-  
+}
 
-  a {
-    color: white;
-    text-decoration: none;
+@media (max-width: 768px) {
+  .logo {
+    max-width: 60%;
   }
 
-  a:link{
-    color: white;
+  .footerHeading {
+    font-size: 0.9rem;
   }
-  
-  a:visited {
-    text-decoration: none;
+
+  .footerPara {
+    font-size: 0.7rem;
   }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #FFB600;
+
+  .listType li {
+    font-size: 0.7rem;
   }
-  
-  a:active {
-    text-decoration: underline;
+
+  .icon {
+    font-size: 0.7rem;
   }
- 
-  /* Responsive Styles */
-  @media (max-width: 992px) {
-    .logo {
-      max-width: 70%;
-    }
-  
-    .footerHeading {
-      font-size: 1rem;
-    }
-  
-    .footerPara {
-      font-size: 0.8rem;
-    }
-  
-    .listType li {
-      font-size: 0.8rem;
-    }
-  
-    .icon {
-      font-size: 0.8rem;
-    }
-  
-    .form-control {
-      padding: 10px 24px;
-      font-size: 0.8rem;
-      margin: 8px;
-    }
-  
-    .button {
-      padding: 10px 24px;
-      font-size: 12px;
-    }
+
+  .form-control {
+    padding: 8px 20px;
+    font-size: 0.7rem;
   }
-  
-  @media (max-width: 768px) {
-    .logo {
-      max-width: 60%;
-    }
-  
-    .footerHeading {
-      font-size: 0.9rem;
-    }
-  
-    .footerPara {
-      font-size: 0.7rem;
-    }
-  
-    .listType li {
-      font-size: 0.7rem;
-    }
-  
-    .icon {
-      font-size: 0.7rem;
-    }
-  
-    .form-control {
-      padding: 8px 20px;
-      font-size: 0.7rem;
-    }
-  
-    .button {
-      padding: 8px 20px;
-      font-size: 10px;
-    }
+
+  .button {
+    padding: 8px 20px;
+    font-size: 10px;
   }
-  
-  @media (max-width: 576px) {
-    .logo {
-      max-width: 50%;
-    }
-  
-    .footerHeading {
-      font-size: 0.8rem;
-    }
-  
-    .footerPara {
-      font-size: 0.6rem;
-    }
-  
-    .listType li {
-      font-size: 0.6rem;
-    }
-  
-    .icon {
-      font-size: 0.6rem;
-    }
-  
-    .form-control {
-      padding: 6px 16px;
-      font-size: 0.6rem;
-      margin: 6px;
-    }
-  
-    .button {
-      padding: 6px 16px;
-      font-size: 8px;
-    }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 50%;
   }
-  
+
+  .footerHeading {
+    font-size: 0.8rem;
+  }
+
+  .footerPara {
+    font-size: 0.6rem;
+  }
+
+  .listType li {
+    font-size: 0.6rem;
+  }
+
+  .icon {
+    font-size: 0.6rem;
+  }
+
+  .form-control {
+    padding: 6px 16px;
+    font-size: 0.6rem;
+    margin: 6px;
+  }
+
+  .button {
+    padding: 6px 16px;
+    font-size: 8px;
+  }
+}
