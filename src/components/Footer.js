@@ -62,7 +62,7 @@ const Footer = () => {
           <span className='text-right'><a href='/'>Privacy Policy</a> <a href='/'>Terms of Use</a></span>
         </Typography>
       </Container>
-    </footer>
+    </footer> 
   );
 };
 

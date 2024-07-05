@@ -19,6 +19,23 @@ gr-1: #636d3a;  */
 .heading{
   color:#FFB600;
 }
+
+/* Navigation.css */
+/* .logo {
+  height: 60px;
+  width: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 80px;
+    width: 140px;
+    object-fit: cover;
+
+  }
+} */
+
 .image-container {
   position: relative;
   display: inline-block;
