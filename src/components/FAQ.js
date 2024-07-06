@@ -27,7 +27,7 @@ export default function AccordionExpandIcon() {
       boxShadow: '1px 1px 10px 0px grey',
       color: accordionStyle.answerColor 
     }}>
-      <h3 className='text-primary text-center'>FREQUENTLY ASKED QUESTIONS</h3>
+      <h3 className=' text-center' style={{color:'#14274C'}}>FREQUENTLY ASKED QUESTIONS</h3>
       
       {accordionItems.map((item, index) => (
         <Accordion key={index} style={{ color: accordionStyle.questionColor }}>

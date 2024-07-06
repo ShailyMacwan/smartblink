@@ -194,3 +194,20 @@ a:active {
     font-size: 8px;
   }
 }
+
+.social-icon {
+  width: 30px; /* Adjust the size of the icons */
+  height: auto;
+  transition: transform 0.2s;
+  float: left;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Optional: Add a hover effect */
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 25px; /* Adjust size for smaller screens */
+  }
+}

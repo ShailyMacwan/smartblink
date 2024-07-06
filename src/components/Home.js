@@ -106,16 +106,16 @@ export default function Home() {
 </div>
 
 
-    <div className="homeImage">
+    <div className="homeImage ml-2">
         <div className="row">
             <div className="column">
-                <img src={home1} alt="Snow" />
+                <img src={home1} alt="/" />
             </div>
             <div className="column">
-                <img src={home2} alt="Forest" />
+                <img src={home2} alt="/" />
             </div>
             <div className="column">
-                <img src={home3} alt="Mountains" />
+                <img src={home3} alt="/" />
             </div>
         </div>
     </div>
