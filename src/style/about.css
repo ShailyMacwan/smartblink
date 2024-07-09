@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 2rem; /* Reduce margin */
+    margin: 1rem; /* Reduce margin */
     padding: 1rem; /* Reduce padding */
   }
   
@@ -45,6 +45,7 @@
     .gallery > div {
       width: 100%;
       height: auto; /* Adjust height to auto for better responsiveness */
+      flex-direction: column;
     }
   }
   

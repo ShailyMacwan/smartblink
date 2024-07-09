@@ -1,11 +1,41 @@
 import React from 'react';
 import hmBackground from '../assets/home-bg.jpg';
-import { Paper, Typography, Grid } from '@mui/material';
+import { Paper, Typography, Grid, Card, CardContent, CardMedia} from '@mui/material';
 import '../style/about.css';
 import owner1 from '../assets/owner1.jpg';
 import owner2 from '../assets/owner2.jpg';
+import about_1 from '../assets/about/about_1.webp'
+import about_2 from '../assets/about/about_2.jpg'
+import about_3 from '../assets/about/about_3.jpg'
+import why_choose from '../assets/about/why_choose.webp'
+import check from '../assets/about/icons8-check-mark-100.png'
+import { Check2Circle , CheckCircleFill} from 'react-bootstrap-icons';
+
 
 const About = () => {
+
+    // Array of objects for easier mapping
+    const cards = [
+      { image: about_1, title: 'SMART HOME INTEGRATION', description: 'Converting traditional homes into smart homes with integrated systems for lighting, security,climate control, and more. ' },
+      { image: about_2, title: 'CUSTOM SOLUTIONS', description: 'Tailoring smart home solutions to meet the unique needs and preferences of each client.' },
+      { image: about_3, title: 'INNOVATION AND QUALITY', description: 'Utilizing the latest technology to deliver high-quality, reliable smart home products and services. ' }
+    ];
+
+    const items = [
+      {
+        title: 'Expertise:',
+        description: 'Our team comprises experts in smart home technology, ensuring you receive the best solutions and services.'
+      },
+      {
+        title: 'Customer-Centric:',
+        description: "We prioritize our customers' needs, providing personalized support and exceptional service."
+      },
+      {
+        title: 'Innovation:',
+        description: 'We stay ahead of the curve by continuously innovating and integrating the latest technologies into our products.'
+      }
+    ];
+
   return (
     <>
       <div>
@@ -45,7 +75,7 @@ const About = () => {
         </Grid>
       </Grid>
 
-      <h2 className='text-center fw-dark founders-title' style={{ color: '#8C472E', marginTop:'2rem' }}>FOUNDERS</h2>
+      <h2 className='text-center fw-dark founders-title' style={{ color: '#8C472E', marginTop:'3rem' }}>FOUNDERS</h2>
       <div className="gallery">
         <div className='founder'>
           <img src={owner1} style={{ width: '250px', height: '250px', borderRadius: '50%' }} alt="Sahil Patel" />
@@ -61,8 +91,63 @@ const About = () => {
           <div className='founder-name text-center'>Neel Patel</div>
         </div>
       </div>
+
+      <h2 className='text-center fw-dark founders-title' style={{ color: '#8C472E', marginTop:'2rem' }}>WHAT WE DO</h2>
+
+
+      <Grid container spacing={2} justifyContent="center">
+        {cards.map((card, index) => (
+          <Grid item key={index} xs={12} sm={6} md={3} style={{ display: 'flex', justifyContent: 'center', margin: '1rem' }}>
+            <Card sx={{ maxWidth: 445, boxShadow: 'none', border: '1px solid #d9d8d7' }}>
+              <CardMedia component="img"  height="300" image={card.image} alt={card.title} style={{objectFit:'content'}}  />
+              <CardContent>
+                <Typography gutterBottom variant="h5" className='text-center' component="div" style={{ color: '#14274C', fontSize: '1.5rem', fontWeight: 'bolder' }}>
+                  {card.title}
+                </Typography>
+                <Typography variant="body2" className='text-center' color="text.secondary" >
+                  {card.description}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+
+      <div className="flex-container">
+      <div className="flex-item-left">      
+        <img src={why_choose} alt="Descriptive Text" className="img-fluid" style={{maxHeight:'500px',objectFit:'cover', minWidth:'450px', boxShadow: '1px 1px 10px 0px grey'}} />
+      </div>
+      <div className="flex-item-right" style={{color:'#14274C'}}>
+      
+      <div>
+      <h2 className="text-center" style={{ color: '#8C472E' }}>
+        WHY CHOOSE US?
+      </h2>
+      {items.map((item, index) => (
+        <div key={index} style={{ display: 'flex', alignItems: 'center',marginBottom: '10px' }}>
+          <CheckCircleFill style={{ color: '#8C472E', fontWeight: 'bold', marginRight: '8px' }} />
+          <h5 style={{ margin: 0 }}>
+            <span style={{ color: 'darkblue', fontWeight: 'bold' }}>{item.title}</span>
+            <span className="text-dark fw-light" style={{ marginLeft: '8px', fontSize:'medium' }}>{item.description}</span>
+          </h5>
+        </div>
+      ))}
+    </div>
+      </div>
+    </div> 
+
+    <div className='text-center mt-2 p-5' style={{ backgroundColor: '#b6c3db', color: '#14274C' }}>
+      <div>
+        <h1>
+          Join us on <span style={{ display: 'block', fontWeight: 'bolder' }}>Our Journey</span>
+        </h1>
+        <p className='text-dark' style={{ maxWidth: '400px', margin: '10px auto', padding: '10px auto' }}>
+          At Smartblink, we invite you to join us on our way to make every home a smart home. Experience the future with our state-of-the-art smart home solutions that bring security, convenience, and efficiency to your fingertips.
+        </p>
+      </div>
+    </div>
     </>
   );
-}
+};
 
 export default About;
