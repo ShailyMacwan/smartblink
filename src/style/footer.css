@@ -23,7 +23,12 @@ p {
   color: yellow;
 }
 
-li a {
+.list-item, .contact-item {
+  display: flex;
+  align-items: center;
+}
+
+li a, .contact-item a {
   color: white;
 }
 
@@ -43,6 +48,7 @@ li a {
   width: 80%;
   height: 3rem;
   line-height: 3rem;
+  color: white;
 }
 
 .button {
@@ -110,7 +116,7 @@ a:active {
     font-size: 0.8rem;
   }
 
-  .listType li {
+  .listType li, .contact-item {
     font-size: 0.8rem;
   }
 
@@ -143,7 +149,7 @@ a:active {
     font-size: 0.7rem;
   }
 
-  .listType li {
+  .listType li, .contact-item {
     font-size: 0.7rem;
   }
 
@@ -175,7 +181,7 @@ a:active {
     font-size: 0.6rem;
   }
 
-  .listType li {
+  .listType li, .contact-item {
     font-size: 0.6rem;
   }
 

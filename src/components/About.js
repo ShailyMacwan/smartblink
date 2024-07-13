@@ -43,7 +43,7 @@ const About = () => {
           <img src={hmBackground} alt="Descriptive Text" className="image" />
           <div className="overlay">
             <div className='overlay-text'>
-              <h1 className='display-2'>ABOUT US</h1>
+              <h1 className='display-2 fw-bold'>ABOUT US</h1>
               <p className='body-1 text-break text-wrap'>
                 SmartBlink is dedicated to transforming ordinary homes into smart homes, making life more convenient, secure, and energy-efficient.
               </p>
@@ -52,10 +52,11 @@ const About = () => {
         </div>
       </div>
 
-      <Grid container spacing={2} sx={{ mr: 3, mb: 3 }}>
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 6, margin: '10px', height: '100%', backgroundColor: '#CBD4E7', textJustify: 'inter-word'}}>
-            <Typography variant="h4" gutterBottom style={{ color: '#14274C', textAlign: 'center' }}>
+      <div>
+      <Grid container spacing={2} sx={{ mx: 'auto', mb: 3, maxWidth: '1200px' }}>
+        <Grid item xs={12} md={6} sx={{ display: 'flex' }}>
+          <Paper sx={{ p: { xs: 3, md: 6 }, m: { xs: '20px', md: '60px 10px 60px 60px' }, flex: 1, backgroundColor: '#CBD4E7', display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h4" gutterBottom style={{ color: '#14274C', textAlign: 'center', fontWeight:'bold' }}>
               OUR MISSION
             </Typography>
             <Typography variant="body1" style={{ textAlign: 'center', color: '#14274C', marginBottom: '2rem' }}>
@@ -63,19 +64,20 @@ const About = () => {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 6, margin: '10px', height: '100%', backgroundColor: '#CBD4E7', textJustify: 'inter-word' }}>
-            <Typography variant="h4" gutterBottom style={{ color: '#14274C', textAlign: 'center' }}>
+        <Grid item xs={12} md={6} sx={{ display: 'flex' }}>
+          <Paper sx={{ p: { xs: 3, md: 6 }, m: { xs: '20px', md: '60px 60px 60px 10px' }, flex: 1, backgroundColor: '#CBD4E7', display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h4" gutterBottom style={{ color: '#14274C', textAlign: 'center', fontWeight:'bold' }}>
               OUR VISION
             </Typography>
-            <Typography variant="body1" style={{ textAlign: 'center', color: '#14274C', marginBottom: '2rem' }}>
+            <Typography variant="body1" style={{ textAlign: 'center', color: '#14274C', marginBottom: '1rem' }}>
               To lead the smart home revolution, making advanced home automation standard, creating smarter, safer, and more energy-efficient homes worldwide.
             </Typography>
           </Paper>
         </Grid>
       </Grid>
 
-      <h2 className='text-center fw-dark founders-title' style={{ color: '#8C472E', marginTop:'3rem' }}>FOUNDERS</h2>
+      <h2 className='text-center fw-dark founders-title' style={{ color: '#8C472E', marginTop:'2rem', fontWeight:'bold' }}>FOUNDER</h2>
+
       <div className="gallery">
         <div className='founder'>
           <img src={owner1} style={{ width: '250px', height: '250px', borderRadius: '50%' }} alt="Sahil Patel" />
@@ -91,8 +93,8 @@ const About = () => {
           <div className='founder-name text-center'>Neel Patel</div>
         </div>
       </div>
-
-      <h2 className='text-center fw-dark founders-title' style={{ color: '#8C472E', marginTop:'2rem' }}>WHAT WE DO</h2>
+    </div>
+      <h2 className='text-center fw-dark founders-title' style={{ color: '#8C472E', marginTop:'2rem', fontWeight:'bold' }}>WHAT WE DO</h2>
 
 
       <Grid container spacing={2} justifyContent="center">

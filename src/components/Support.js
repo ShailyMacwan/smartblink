@@ -52,7 +52,7 @@ const support = () => {
         <img src={support} alt="Descriptive Text" className="image" />
         <div className="overlay">
           <div className='overlay-text'>
-            <h1 className='display-2'>HELP CENTER</h1>
+            <h1 className='display-2 fw-bold'>HELP CENTER</h1>
             <p className='body-1 text-break text-wrap'>Smartblink is dedicated to transforming ordinary homes into smart homes, making life more convenient, secure and energy-efficient</p>
           </div>        
         </div>

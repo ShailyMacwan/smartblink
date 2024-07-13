@@ -1,51 +1,57 @@
 /* Flex container */
 .gallery {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+  gap: 1rem; /* Adjust the gap between items */
+}
+
+/* Flex items */
+.gallery > div {
+  text-align: center;
+  flex: 1;
+}
+
+/* Founder names */
+.founder-name {
+  color: #000;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 1.2rem; /* Increase font size */
+}
+
+/* Founder description */
+.founder-description {
+  flex: 1;
+  max-width: 300px;
+  margin: 0.5rem 1rem; /* Adjust margin for better spacing */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
-    margin: 1rem; /* Reduce margin */
-    padding: 1rem; /* Reduce padding */
+    margin: 10px;
+    padding: 16px;
   }
-  
-  /* Flex items */
+
   .gallery > div {
-    margin: 0.5rem; /* Reduce margin between items */
-    text-align: center; /* Center the text */
+    width: 100%;
+    margin: 8px; /* Reduce margin for smaller screens */
   }
-  
-  /* Founder names */
-  .founder-name {
-    color: #000; /* Make the text dark */
-    font-weight: bold;
-    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Founder title */
-  .founders-title {
-    color: #000; /* Make the title dark */
-    font-weight: bold;
+
+  .gallery > div {
+    width: 100%;
+    margin: 8px; /* Reduce margin for smaller screens */
   }
-  
-  /* Founder description */
-  .founder-description {
-    margin: 0.5rem 1rem; /* Adjust margin for better spacing */
-  }
-  
-  @media screen and (max-width: 768px) {
-    .gallery > div {
-      width: 49%;
-      height: auto; /* Adjust height to auto for better responsiveness */
-      margin: 8px; /* Reduce margin for smaller screens */
-      flex-direction: column;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .gallery > div {
-      width: 100%;
-      height: auto; /* Adjust height to auto for better responsiveness */
-      flex-direction: column;
-    }
-  }
-  
+}
