@@ -18,7 +18,7 @@ function Navigation() {
           <Nav.Link href="/solution" className="font-weight-bold">Solution</Nav.Link>
           <Nav.Link href="/FAQ" className="font-weight-bold">FAQ</Nav.Link>
           <Nav.Link href="/contact" className="font-weight-bold">Contact Us</Nav.Link>
-          <Button className="ms-2 text-white" style={{ backgroundColor: "#194E86" }}>
+          <Button href="/bookConsultation" className="ms-2 text-white" style={{ backgroundColor: "#194E86" }}>
             Schedule a Consultation
           </Button>
         </Nav>
