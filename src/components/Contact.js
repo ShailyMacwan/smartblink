@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-const Contact =()=>{
-  <>
-  </>
-}
-
-export default Contact;
-
-=======
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../style/contactUs.css';
@@ -324,4 +313,3 @@ export default Contact;
 //   )
 // }
 
->>>>>>> b188ad5625cc8f0d11c09dbbf24aa00cc80363c9

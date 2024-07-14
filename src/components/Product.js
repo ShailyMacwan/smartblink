@@ -130,7 +130,7 @@ const Product = () =>{
 
 
 
-    <div className="w-full overflow-hidden my-3 pb-16 gap-y-7">
+    <div className="w-full overflow-hidden my-3 pb-16 space-y-10" style={{rowGap:'8rem'}}>
       <div className="flex flex-wrap justify-center mx-2">
         <div className="rounded overflow-visible flex flex-col space-y-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8 px-4" sx={{padding:{xs:'3rem', md:'4rem'}, margin:{xs:'2rem', md:'2rem'}}}>
           <div className="relative">
@@ -248,7 +248,7 @@ const Product = () =>{
 
 
   
-<div class="flex flex-col w-full" x-data="{
+{/* <div class="flex flex-col w-full" x-data="{
         skip: 1,
         atBeginning: false,
         atEnd: false,
@@ -341,7 +341,7 @@ const Product = () =>{
         </Carousel>
       </Container>
     </section>
-  
+   */}
     <section id="testimonials" aria-label="What our customers are saying" className="bg-slate-50 py-100 sm:py-5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl md:text-center">

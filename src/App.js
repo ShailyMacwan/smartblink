@@ -6,13 +6,9 @@ import About from './components/About';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import Product from './components/Product';
-<<<<<<< HEAD
 import Footer from './components/Footer'
 import Support  from './components/Support';
-=======
-import Footer from './components/Footer';
 import BookConsultation from "./components/BookConsultation";
->>>>>>> b188ad5625cc8f0d11c09dbbf24aa00cc80363c9
 
 function App() {
   return (
