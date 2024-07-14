@@ -130,9 +130,9 @@ const Product = () =>{
 
 
 
-    <div className="w-full overflow-hidden">
-      <div className="flex flex-wrap justify-center -mx-0">
-        <div className="rounded overflow-visible flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8 px-4">
+    <div className="w-full overflow-hidden my-3 pb-16 gap-y-7">
+      <div className="flex flex-wrap justify-center mx-2">
+        <div className="rounded overflow-visible flex flex-col space-y-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8 px-4" sx={{padding:{xs:'3rem', md:'4rem'}, margin:{xs:'2rem', md:'2rem'}}}>
           <div className="relative">
             <img className="w-full h-80 object-cover" src={fdoor} alt="Front Door" />
             <div className="absolute bottom-0 w-full flex justify-center" style={{ transform: 'translateY(60%)' }}>
