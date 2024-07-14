@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   overflow-x: hidden;
 }
@@ -267,4 +272,20 @@ gr-1: #636d3a;  */
       max-width: 90%;
       height: auto;
   }
+}
+
+/* Example of CSS for grid layout (Tailwind CSS) */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item-padding-40-px {
+  padding: 0 20px;
+}
+
+.feature-image {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
 }

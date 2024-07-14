@@ -15,7 +15,7 @@ function Navigation() {
           <Nav.Link href="/" className="font-weight-bold">Home</Nav.Link>
           <Nav.Link href="/about" className="font-weight-bold">About</Nav.Link>
           <Nav.Link href="/product" className="font-weight-bold">Products</Nav.Link>
-          <Nav.Link href="/solution" className="font-weight-bold">Solution</Nav.Link>
+          <Nav.Link href="/support" className="font-weight-bold">Support</Nav.Link>
           <Nav.Link href="/FAQ" className="font-weight-bold">FAQ</Nav.Link>
           <Nav.Link href="/contact" className="font-weight-bold">Contact Us</Nav.Link>
           <Button className="ms-2 text-white" style={{ backgroundColor: "#194E86" }}>

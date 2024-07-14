@@ -22,22 +22,22 @@ const Footer = () => {
               <ul className="list-unstyled d-flex justify-content-left mt-1">
                 <li className="mr-2">
                   <a target="_blank" rel="noopener noreferrer">
-                    <img src={facebook} className="social-icon" alt="Facebook" />
+                    <img src={facebook} className="social-icon rounded-lg" alt="Facebook" />
                   </a>
                 </li>
                 <li className="mr-2">
                   <a target="_blank" rel="noopener noreferrer">
-                    <img src={twitter} className="social-icon" alt="Twitter" />
+                    <img src={twitter} className="social-icon rounded-lg" alt="Twitter" />
                   </a>
                 </li>
                 <li className="mr-2">
                   <a target="_blank" rel="noopener noreferrer">
-                    <img src={linkedin} className="social-icon" alt="LinkedIn" />
+                    <img src={linkedin} className="social-icon rounded-lg" alt="LinkedIn" />
                   </a>
                 </li>
                 <li className="mr-2">
                   <a target="_blank" rel="noopener noreferrer">
-                    <img src={instagram} className="social-icon" alt="Instagram" />
+                    <img src={instagram} className="social-icon rounded-lg" alt="Instagram" />
                   </a>
                 </li>
               </ul>
@@ -47,14 +47,14 @@ const Footer = () => {
 
 
           <Grid item md={4} xs={12} className="navigation-section">
-      <Typography variant="h6" className="footerHeading">
+      <Typography variant="h6" className="footerHeading ">
         Navigation
       </Typography>
       <ul className="list-unstyled listType">
         <li className="list-item"><ChevronRight /><Link href="/" className="footer-link">Home</Link></li>
         <li className="list-item"><ChevronRight /><Link href="/about" className="footer-link">About Us</Link></li>
         <li className="list-item"><ChevronRight /><Link href="/product" className="footer-link">Products</Link></li>
-        <li className="list-item"><ChevronRight /><Link href="/solution" className="footer-link">Solutions</Link></li>
+        <li className="list-item"><ChevronRight /><Link href="/support" className="footer-link">Support</Link></li>
         <li className="list-item"><ChevronRight /><Link href="/contact" className="footer-link">Contact Us</Link></li>
         <li className="list-item"><ChevronRight /><Link href="/FAQ" className="footer-link">FAQ</Link></li>
       </ul>
@@ -95,7 +95,7 @@ const Footer = () => {
       <Container>
         <Typography variant="body2" className="d-flex justify-content-between">
           <span>© {new Date().getFullYear()} Smartblink. All Rights Reserved.</span>
-          <span className='text-right'><a href='/'>Privacy Policy</a> <a href='/'>Terms of Use</a></span>
+          <span className='text-right space-x-4'><a href='/'>Privacy Policy</a> <a href='/'>Terms of Use</a></span>
         </Typography>
       </Container>
     </footer> 

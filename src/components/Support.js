@@ -12,7 +12,7 @@ import icone3 from '../assets/support_icons/icons8-book-64.png';
 import icone4 from '../assets/support_icons/icons8-help-100.png';
 import icone5 from '../assets/support_icons/icons8-rocket-80.png';
 import icone6 from '../assets/support_icons/icons8-rocket-80.png';
-import support from "../assets/support.webp";
+import supportwebp from "../assets/support.webp";
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
@@ -21,21 +21,22 @@ const FeatureItem = ({ icon, text, desc }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <div className="feature-item" style={{ border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)', padding: '1rem', textAlign: 'center', height:'340px', width: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}>
-      <div className="image_container" style={{ width: isMobile ? '90px' : '120px', height: isMobile ? '90px' : '120px', borderRadius: '50%', backgroundColor:'#14274C', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <img src={icon} alt='icon' style={{ width: isMobile ? '40px' : '70px', height: isMobile ? '40px' : '70px' }}/>
-      </div>
-      <div className='features_text' style={{ color:'#14274C', fontSize:'1.5rem', fontWeight:'bolder', padding:'1rem', textAlign: 'center' }}>
-        {text}
-      </div>
-      <div className="features_desc" style={{ textAlign: 'center' }}>
-        {desc}
-      </div>
+    <div className="feature-item" style={{ border: '1px solid #ccc', borderRadius: '8px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)', padding: '1rem', textAlign: 'center', height: '340px', width: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}>
+    <div className="image_container" style={{ width: isMobile ? '90px' : '120px', height: isMobile ? '90px' : '120px', borderRadius: '50%', backgroundColor: '#14274C', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <img src={icon} alt='icon' className="feature-image" />
     </div>
+    <div className='features_text' style={{ color: '#194E86', fontSize: '1.5rem', fontWeight: 'bolder', padding: '1rem', textAlign: 'center' }}>
+      {text}
+    </div>
+    <div className="features_desc" style={{ textAlign: 'center' }}>
+      {desc}
+    </div>
+  </div>
+
   );
 };
 
-const support = () => {
+const Support = () => {
   // Array of objects for easier mapping
   const cards = [
     { image: home6, title: 'SUBJECT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus nesciunt architecto! Quis quo accusantium ipsum, ' },
@@ -49,7 +50,7 @@ const support = () => {
   return (
     <>
       <div className="image-container">
-        <img src={support} alt="Descriptive Text" className="image" />
+        <img src={supportwebp} alt="Descriptive Text" className="image" />
         <div className="overlay">
           <div className='overlay-text'>
             <h1 className='display-2 fw-bold'>HELP CENTER</h1>
@@ -66,9 +67,10 @@ const support = () => {
         ))}
       </Grid>
 
-      <h2 className="text-center" style={{ color: '#8C472E', margin: '2rem 0' }}>
+      <h2 className="text-center fw-dark fw-bold" style={{ color: '#8C472E', margin: '2rem 0' }}>
         ARTICLE
       </h2>
+
 
       <Grid container spacing={2} justifyContent="center">
         {cards.map((card, index) => (
@@ -76,7 +78,7 @@ const support = () => {
             <Card sx={{ maxWidth: 445, boxShadow: 'none', border: 'none' }}>
               <CardMedia component="img" height="300" image={card.image} alt={card.title} style={{objectFit:'content'}}  />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div" style={{ color: '#14274C', fontSize: '1.5rem', fontWeight: 'bolder' }}>
+                <Typography gutterBottom variant="h6" component="div" style={{ color: '#194E86', fontWeight: 'bolder' }}>
                   {card.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
@@ -91,4 +93,4 @@ const support = () => {
   );
 };
 
-export default About;
+export default Support;
