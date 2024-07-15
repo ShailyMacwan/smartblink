@@ -1,13 +1,14 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap'; // Importing necessary components from react-bootstrap
-import logo from '../assets/logo.PNG';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navigation() {
   return (
     <Navbar expand="lg" className="bg-white p-3">
       <Navbar.Brand href="/" className='ms-3'>
-        <img src={logo} alt='SmartBlink logo' style={{ height: "60px", width: "200px", objectFit: "cover" }} />
+        <img src='LOGO.svg'alt='SmartBlink logo'
+          className="h-16 w-52 object-cover" style={{height:'70px'}}
+          />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarTogglerDemo02" />
       <Navbar.Collapse id="navbarTogglerDemo02">

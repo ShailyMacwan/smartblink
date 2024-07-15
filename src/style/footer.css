@@ -45,8 +45,8 @@ li a, .contact-item a {
   padding: 12px 28px; 
   font-size: 0.9rem; 
   margin: 10px;
-  width: 80%;
   height: 3rem;
+  width: 100%;
   line-height: 3rem;
   color: white;
 }
@@ -113,58 +113,63 @@ a:active {
   }
 
   .footerPara {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .listType li, .contact-item {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .icon {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
-  .form-control {
-    padding: 10px 24px;
-    font-size: 0.8rem;
+
+  form{
+    /* padding: 10px 24px; */
+    font-size: 0.9rem;
     margin: 8px;
+    width: 100%;
   }
 
   .button {
     padding: 10px 24px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 899px) {
   .logo {
     max-width: 60%;
   }
 
   .footerHeading {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .footerPara {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .listType li, .contact-item {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .icon {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
+  form{
+    width: 50%;
+  }
   .form-control {
     padding: 8px 20px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .button {
     padding: 8px 20px;
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -174,32 +179,31 @@ a:active {
   }
 
   .footerHeading {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .footerPara {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 
-  .listType li, .contact-item {
-    font-size: 0.6rem;
-  }
 
   .icon {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 
   .form-control {
     padding: 6px 16px;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     margin: 6px;
   }
 
   .button {
     padding: 6px 16px;
-    font-size: 8px;
+    font-size: 14px;
   }
 }
+
+
 
 .social-icon {
   width: 30px; /* Adjust the size of the icons */

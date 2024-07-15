@@ -74,10 +74,10 @@ const About = () => {
         </Grid>
 
         <div className="container mx-auto">
-          <h2 className="text-center font-bold text-2xl md:text-4xl text-[#8C472E] mt-8">
+          <h2 className="text-center font-bold text-2xl md:text-4xl mt-8" style={{color:'#8C472E'}}>
             FOUNDER
           </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-16 mt-8">
             <div className="flex flex-col items-center">
               <img
                 src={owner1}

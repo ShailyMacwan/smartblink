@@ -21,13 +21,17 @@ export default function AccordionExpandIcon() {
   };
 
   return (
+
+    <div style={{ backgroundColor: '#f0f0f0', height:'100vh', padding:'2rem' }}>
+
+
     <div style={{
       margin: '6%',
       padding: '5%',
-      boxShadow: '1px 1px 10px 0px grey',
-      color: accordionStyle.answerColor 
+      backgroundColor:'white',
+      boxShadow: '1px 1px 10px 0px grey'
     }}>
-      <h3 className=' text-center' style={{color:'#1424C'}}>FREQUENTLY ASKED QUESTIONS</h3>
+      <h3 className='text-center pb-2 fw-bold' style={{color:'#194E86'}}>FREQUENTLY ASKED QUESTIONS</h3>
       
       {accordionItems.map((item, index) => (
         <Accordion key={index} style={{ color: accordionStyle.questionColor }}>
@@ -44,6 +48,7 @@ export default function AccordionExpandIcon() {
         </Accordion>
       ))}
       
+    </div>
     </div>
   );
 }
