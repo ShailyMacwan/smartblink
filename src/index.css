@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  overflow-x: hidden;
+}
+/* .container footer p{
+  color: white;
+} */
+/* bl-1: #14274C;
+  bl-2 : #194E86;
+yel-1: #FFB600;
+br-1 : #8C472E;
+gr-1: #636d3a;  */
+
+.heading{
+  color:#FFB600;
+}
+
+/* Navigation.css */
+/* .logo {
+  height: 60px;
+  width: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 80px;
+    width: 140px;
+    object-fit: cover;
+
+  }
+} */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  height: 600px;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(27, 60, 128, 0.5); 
+}
+
+.overlay-text {
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+
+.overlay-text .heading {
+  font-size: 2rem; 
+}
+
+.overlay-text h1 {
+  font-size: 3rem; 
+}
+.overlay-text p {
+  font-size: 1.2rem; 
+}
+
+@media (max-width: 1200px) {
+  .overlay-text .heading {
+    font-size: 1.5rem;
+  }
+  .overlay-text h1 {
+    font-size: 2.5rem;
+  }
+  .overlay-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .overlay-text .heading {
+    font-size: 1.3rem;
+  }
+  .overlay-text h1 {
+    font-size: 2rem;
+  }
+  .overlay-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-text .heading {
+    font-size: 1.1rem;
+  }
+  .overlay-text h1 {
+    font-size: 1.5rem;
+  }
+  .overlay-text p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .overlay-text .heading {
+    font-size: 1rem;
+  }
+  .overlay-text h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-left > img{
+  height: fit-content;
+  object-fit: cover;
+}
+
+.flex-item-right {
+  text-align: left;
+  padding: 10px;
+  flex: 50%;
+}
+
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+    padding: 1rem;
+  }
+  
+
+} 
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin:2rem;
+  color: #14274C;
+}
+
+.features > div {
+  flex: 1 1 30%; /* Each item takes up 30% width */
+  max-width: 30%; /* Maximum width for each item */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features_containers {
+  width: 140px;
+  height: 140px; /* Ensures the container is a square */
+  margin: 0 auto;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  background-color: #14274C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features_text {
+  color: grey;
+  width: 60%;
+  text-align: center;
+  margin-top: 10px; /* Adds space between the container and the text */
+}
+
+@media (max-width: 820px) {
+  .features > div {
+    flex-basis: 45%; /* Two items per row */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 468px) {
+  .features {
+    flex-direction: column; /* Switch to column layout */
+    align-items: center;
+  }
+
+  .features > div {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem; /* Space between items */
+  }
+}
+
+
+
+.homeImage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  height: 100%;
+}
+
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .homeImage {
+      flex-direction: column;
+      height: auto;
+  }
+  .row{
+    gap:1rem;
+  }
+  h2 {
+    font-size: 1.5rem; /* Reduced font size for h2 on smaller screens */
+  }
+
+  .column {
+      flex-basis: 90%;
+      max-width: 90%;
+      height: auto;
+  }
+}
+
+/* Example of CSS for grid layout (Tailwind CSS) */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item-padding-40-px {
+  padding: 0 20px;
+}
+
+.feature-image {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}

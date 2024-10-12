@@ -1,0 +1,57 @@
+/* Flex container */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+  gap: 1rem; /* Adjust the gap between items */
+}
+
+/* Flex items */
+.gallery > div {
+  text-align: center;
+  flex: 1;
+}
+
+/* Founder names */
+.founder-name {
+  color: #000;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 1.2rem; /* Increase font size */
+}
+
+/* Founder description */
+.founder-description {
+  flex: 1;
+  max-width: 300px;
+  margin: 0.5rem 1rem; /* Adjust margin for better spacing */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 16px;
+  }
+
+  .gallery > div {
+    width: 100%;
+    margin: 8px; /* Reduce margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery > div {
+    width: 100%;
+    margin: 8px; /* Reduce margin for smaller screens */
+  }
+}

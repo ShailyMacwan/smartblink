@@ -1,0 +1,223 @@
+/* Base Styles */
+p {
+  color: white;
+  font-size: 0.9rem; 
+}
+
+.logo {
+  height: auto;
+  margin-bottom: 1rem; 
+}
+
+.footerHeading {
+  color: white;
+  font-size: 1.2rem; 
+}
+
+.footerPara {
+  color: white;
+}
+
+.listType {
+  font-family: "Bootstrap Icons";
+  color: yellow;
+}
+
+.list-item, .contact-item {
+  display: flex;
+  align-items: center;
+}
+
+li a, .contact-item a {
+  color: white;
+}
+
+.icon {
+  color: yellow;
+  margin-right: 1rem;
+}
+
+.contactItem {
+  margin-bottom: 10px !important;
+}
+
+.form-control {
+  padding: 12px 28px; 
+  font-size: 0.9rem; 
+  margin: 10px;
+  height: 3rem;
+  width: 100%;
+  line-height: 3rem;
+  color: white;
+}
+
+.button {
+  padding: 12px 28px; 
+  font-size: 14px; 
+  cursor: pointer;
+  border: none;
+  background-color: #8C472E;
+  transition-duration: 0.4s;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #cb866d;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FFB600;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* Ensure navigation links are white */
+.footer-link {
+  color: white !important;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #FFB600 !important;
+}
+
+/* Move navigation section to the right */
+.navigation-section {
+  padding-left: 20px; /* Adjust this value as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .logo {
+    max-width: 70%;
+  }
+
+  .footerHeading {
+    font-size: 1rem;
+  }
+
+  .footerPara {
+    font-size: 0.9rem;
+  }
+
+  .listType li, .contact-item {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 0.9rem;
+  }
+
+
+  form{
+    /* padding: 10px 24px; */
+    font-size: 0.9rem;
+    margin: 8px;
+    width: 100%;
+  }
+
+  .button {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 899px) {
+  .logo {
+    max-width: 60%;
+  }
+
+  .footerHeading {
+    font-size: 1rem;
+  }
+
+  .footerPara {
+    font-size: 0.9rem;
+  }
+
+  .listType li, .contact-item {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 0.9rem;
+  }
+
+  form{
+    width: 50%;
+  }
+  .form-control {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 50%;
+  }
+
+  .footerHeading {
+    font-size: 1rem;
+  }
+
+  .footerPara {
+    font-size: 0.9rem;
+  }
+
+
+  .icon {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    margin: 6px;
+  }
+
+  .button {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+
+
+
+.social-icon {
+  width: 30px; /* Adjust the size of the icons */
+  height: auto;
+  transition: transform 0.2s;
+  float: left;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Optional: Add a hover effect */
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 25px; /* Adjust size for smaller screens */
+  }
+}
