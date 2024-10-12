@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de6c6cbd.css",
+    "main.js": "/static/js/main.dcb8e7c4.js",
+    "static/js/453.8aae4f72.chunk.js": "/static/js/453.8aae4f72.chunk.js",
+    "static/media/fdoor.jpg": "/static/media/fdoor.edfea222a8b8235d42fc.jpg",
+    "static/media/home-01.jpg": "/static/media/home-01.d89badb05ec24eaf4126.jpg",
+    "static/media/idoor.jpg": "/static/media/idoor.b0b94adebcab8f271da9.jpg",
+    "static/media/home-1.jpg": "/static/media/home-1.b32a9e2ce85b273f077a.jpg",
+    "static/media/home-bg.jpg": "/static/media/home-bg.cc1fd09869780282a55e.jpg",
+    "static/media/product_hero.png": "/static/media/product_hero.02b35b1231450f21d5b8.png",
+    "static/media/home-2.jpeg": "/static/media/home-2.9a48a665ef4c3207a21f.jpeg",
+    "static/media/gdoor.jpg": "/static/media/gdoor.00039e6362038b6af30a.jpg",
+    "static/media/auto.jpg": "/static/media/auto.bc79337dad7820545289.jpg",
+    "static/media/home-3.png": "/static/media/home-3.549a517c965a788d1d0b.png",
+    "static/media/about_2.jpg": "/static/media/about_2.0aed5152494038812711.jpg",
+    "static/media/benefits_img.jpg": "/static/media/benefits_img.034312689b4629831161.jpg",
+    "static/media/about_1.webp": "/static/media/about_1.b48e7697f89862dec061.webp",
+    "static/media/owner1.jpg": "/static/media/owner1.17073e06166355ee21de.jpg",
+    "static/media/owner2.jpg": "/static/media/owner2.045164ac582e91e390d5.jpg",
+    "static/media/support.webp": "/static/media/support.87e82ca18080f1c62d25.webp",
+    "static/media/about_3.jpg": "/static/media/about_3.b08de6259b72b8a9d758.jpg",
+    "static/media/why_choose.webp": "/static/media/why_choose.46a4d65341fdcc1814bf.webp",
+    "static/media/bdoor.jpg": "/static/media/bdoor.a27bf88c2026c0f29de7.jpg",
+    "static/media/logo.PNG": "/static/media/logo.7ed07403cf348fda09b9.PNG",
+    "index.html": "/index.html",
+    "main.de6c6cbd.css.map": "/static/css/main.de6c6cbd.css.map",
+    "main.dcb8e7c4.js.map": "/static/js/main.dcb8e7c4.js.map",
+    "453.8aae4f72.chunk.js.map": "/static/js/453.8aae4f72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de6c6cbd.css",
+    "static/js/main.dcb8e7c4.js"
+  ]
+}
