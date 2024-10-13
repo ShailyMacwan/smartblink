@@ -11,14 +11,7 @@ import auto from '../assets/about/product/auto.jpg'
 import icone1 from '../assets/about/product/unlocking.png'
 import icone2 from '../assets/about/product/lighting.png'
 import icone3 from '../assets/about/product/security_check.png'
-import dquotes from '../assets/about/product/icons8-double-quotes-50.png'
-import { useMediaQuery } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { useState } from 'react';
 
-
-
-import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Rating from '@mui/material/Rating';
 import Quote from '@mui/icons-material/FormatQuote';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
-import home1 from '../assets/home-01.jpg';
 import home2 from '../assets/home-2.jpeg';
 import home3 from '../assets/home-3.png';
 import home4 from '../assets/home-3.png'; // Example image path

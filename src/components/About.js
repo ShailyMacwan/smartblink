@@ -8,7 +8,7 @@ import about_1 from '../assets/about/about_1.webp'
 import about_2 from '../assets/about/about_2.jpg'
 import about_3 from '../assets/about/about_3.jpg'
 import why_choose from '../assets/about/why_choose.webp'
-import { Check2Circle , CheckCircleFill} from 'react-bootstrap-icons';
+import { CheckCircleFill} from 'react-bootstrap-icons';
 
 const About = () => {
   // Array of objects for easier mapping
