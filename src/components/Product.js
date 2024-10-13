@@ -11,7 +11,6 @@ import auto from '../assets/about/product/auto.jpg'
 import icone1 from '../assets/about/product/unlocking.png'
 import icone2 from '../assets/about/product/lighting.png'
 import icone3 from '../assets/about/product/security_check.png'
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Rating from '@mui/material/Rating';
 import Quote from '@mui/icons-material/FormatQuote';
@@ -38,25 +37,7 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/men/10.jpg"
   }
 ];
-
-const responsive = {
-desktop: {
-  breakpoint: { max: 3000, min: 1024 },
-  items: 3,
-  slidesToSlide: 3
-},
-tablet: {
-  breakpoint: { max: 1024, min: 464 },
-  items: 2,
-  slidesToSlide: 2
-},
-mobile: {
-  breakpoint: { max: 464, min: 0 },
-  items: 1,
-  slidesToSlide: 1
-}
-};
-  
+ 
 
 const icons = [icone1, icone2, icone3];
 const titles = ["Smart Lock", "Smart Lighting", "Security Notification"];
@@ -67,16 +48,6 @@ const descriptions = [
 ];
 
 const Product = () =>{
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
-  };
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
-  };
 
   const items = [
     { item: 'Enhanced Security' },
@@ -239,102 +210,6 @@ const Product = () =>{
       </Typography>
     </Paper>
 
-
-  
-{/* <div class="flex flex-col w-full" x-data="{
-        skip: 1,
-        atBeginning: false,
-        atEnd: false,
-        next() {
-            this.to((current, offset) => current + (offset * this.skip))
-        },
-        prev() {
-            this.to((current, offset) => current - (offset * this.skip))
-        },
-        to(strategy) {
-            let slider = this.$refs.slider
-            let current = slider.scrollLeft
-            let offset = slider.firstElementChild.getBoundingClientRect().width
-            slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
-        },
-        focusableWhenVisible: {
-            'x-intersect:enter'() {
-                this.$el.removeAttribute('tabindex')
-            },
-            'x-intersect:leave'() {
-                this.$el.setAttribute('tabindex', '-1')
-            },
-        },
-        disableNextAndPreviousButtons: {
-            'x-intersect:enter.threshold.05'() {
-                let slideEls = this.$el.parentElement.children
-                // If this is the first slide.
-                if (slideEls[0] === this.$el) {
-                    this.atBeginning = true
-                // If this is the last slide.
-                } else if (slideEls[slideEls.length-1] === this.$el) {
-                    this.atEnd = true
-                }
-            },
-            'x-intersect:leave.threshold.05'() {
-                let slideEls = this.$el.parentElement.children
-                // If this is the first slide.
-                if (slideEls[0] === this.$el) {
-                    this.atBeginning = false
-                // If this is the last slide.
-                } else if (slideEls[slideEls.length-1] === this.$el) {
-                    this.atEnd = false
-                }
-            },
-        },
-    }">
-      
-    </div>
-  
-
-    <section id="testimonials" aria-label="What our customers are saying" className="bg-slate-50 py-10 sm:py-5">
-      <Container maxWidth="lg">
-        <Typography variant="h2" align="center" gutterBottom style={{ color: '#8C472E' }}>
-            TESTIMONIALS FROM OUR CLIENT
-        </Typography>
-        <Carousel
-          responsive={responsive}
-          ssr={true}
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={3000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          deviceType={responsive}
-          partialVisbile={true} // Allow partial visibility of slides
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {testimonials.map((testimonial, index) => (
-            <div key={index}>
-              <Paper sx={{ p: 4, backgroundColor: '#f2decf' }}>
-                <Quote style={{ fontSize: '3rem', color: '#8C472E' }} />
-                <Typography variant="body1" style={{ color: '#194E86', marginBottom: '1rem' }}>
-                  {testimonial.quote}
-                </Typography>
-                <Rating name="size-small" defaultValue={testimonial.rating} size="small" />
-                <div style={{ display: 'flex', alignItems: 'center', marginTop: '1rem' }}>
-                  <img src={testimonial.image} alt={testimonial.name} style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '10px' }} />
-                  <div>
-                    <Typography variant="h6" style={{ color: '#8C472E', fontWeight: 'bold' }}>{testimonial.name}</Typography>
-                    <Typography variant="subtitle1" style={{ color: '#14274C' }}>{testimonial.profile}</Typography>
-                  </div>
-                </div>
-              </Paper>
-            </div>
-          ))}
-        </Carousel>
-      </Container>
-    </section>
-   */}
     <section id="testimonials" aria-label="What our customers are saying" className="bg-slate-50 py-100 sm:py-5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl md:text-center">
